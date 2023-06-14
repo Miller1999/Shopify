@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile menu</title>
+    <style>
+        :root{
+            --black:#000000;
+            --white: #FFFFFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --dark: #232830;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .mobile-menu{
+            padding: 24px;
+        }
+        .mobile-menu a{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            /* margin-bottom: 24px; */
+        }
+        .mobile-menu ul{
+            padding: 0;
+            margin: 24px 0 0;
+            list-style: none;
+        }
+        .mobile-menu ul:first-child{
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .mobile-menu ul li{
+            margin-bottom: 24px;
+        }
+        .mobile-menu .email{
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+        .mobile-menu .sign-out{
+            font-size: var(--sm);
+            color: var(--hospital-green);
+        }
+        .mobile-menu .espacio{
+            margin: 80px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="/">CATEGORIES</a></li>
+            <li><a href="/">All</a></li>
+            <li><a href="/">Clothes</a></li>
+            <li><a href="/">Electronics</a></li>
+            <li><a href="/">Furnitures</a></li>
+            <li><a href="/">Toys</a></li>
+            <li><a href="/">Others</a></li>
+        </ul>
+        <ul class="espacio">
+            <li><a href="">My Orders</a></li>
+            <li><a href="">My Account</a></li>
+        </ul>
+        <ul class="espacio">
+            <li><a href="" class="email">platzi@example.com</a></li>
+            <li><a href="" class="sign-out">Sign out</a></li>
+        </ul>
+    </div>
+</body>
+</html>
