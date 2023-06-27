@@ -3,33 +3,33 @@ const desktopMenu = document.querySelector(".desktop-menu")
 const iconoHam = document.querySelector(".menu")
 const mobileMenu = document.querySelector(".mobile-menu")
 const menuCarritoIcon = document.querySelector(".navbar-shopping-cart")
-const aside = document.querySelector(".product-detail")
+const shoppingCartContainer = document.querySelector("#shoppingCartContainer")
 const cardsContainer = document.querySelector(".cards-container")
 
 navEmail.addEventListener("click",toggleDesktopMenu)
 iconoHam.addEventListener("click",toggleMobileMenu)
-menuCarritoIcon.addEventListener("click",toggleCarritoAside)
+menuCarritoIcon.addEventListener("click",toggleCarritoshoppingCartContainer)
 
 function toggleDesktopMenu(){
-    const isAsideOpen = !aside.classList.contains("inactive")
-    if(isAsideOpen){
-        aside.classList.add("inactive")
+    const isshoppingCartContainerOpen = !shoppingCartContainer.classList.contains("inactive")
+    if(isshoppingCartContainerOpen){
+        shoppingCartContainer.classList.add("inactive")
     }
     desktopMenu.classList.toggle("inactive")
 }
 function toggleMobileMenu(){
-    const isAsideOpen = !aside.classList.contains("inactive")
-    if(isAsideOpen){
-        aside.classList.add("inactive")
+    const isshoppingCartContainerOpen = !shoppingCartContainer.classList.contains("inactive")
+    if(isshoppingCartContainerOpen){
+        shoppingCartContainer.classList.add("inactive")
     }
     mobileMenu.classList.toggle("inactive")
 }
-function toggleCarritoAside(){
+function toggleCarritoshoppingCartContainer(){
     const isMobileMenuOpen = !mobileMenu.classList.contains("inactive")
     if(isMobileMenuOpen){
         mobileMenu.classList.add("inactive")
     }
-        aside.classList.toggle("inactive")
+        shoppingCartContainer.classList.toggle("inactive")
 }
 
 const productList = [];
